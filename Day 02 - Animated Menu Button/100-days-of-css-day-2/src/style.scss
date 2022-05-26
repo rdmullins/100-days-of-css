@@ -1,0 +1,86 @@
+// delete the following line if no text is used
+// edit the line if you wanna use other fonts
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+// use only the available space inside the 400x400 frame
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+	box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+	overflow: hidden;
+  background: orange;
+  color: #333;
+	font-family: 'Open Sans', Helvetica, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+#topbar {
+	color: brown;
+	background: brown;
+	border: 1px solid brown;
+	height: 5vh;
+	width: 10vw;
+	margin: 15px;
+  position: relative;
+  animation-name: topbardown;
+  animation-duration: 4s;
+  animation-delay: 10s;
+	animation-fill-mode: forwards;
+}
+
+#midbar {
+	color: brown;
+	background: brown;
+	border: 1px solid brown;
+	height: 5vh;
+	width: 10vw;
+	margin: 15px;
+  animation-name: middlebarout;
+  animation-duration: 2s;
+  animation-delay: 10s;
+	animation-fill-mode: forwards;
+}
+
+#lowbar {
+	color: brown;
+	background: brown;
+	border: 1px solid brown;
+	height: 5vh;
+	width: 10vw;
+	margin: 15px;
+  position: relative;
+  animation-name: bottombarup;
+  animation-duration: 4s;
+  animation-delay: 10s;
+	animation-fill-mode: forwards;
+}
+
+@keyframes topbardown {
+  0%    {top:0px;}
+  100%  {top:40px; transform:rotate(45deg);}
+}
+
+@keyframes bottombarup {
+  0%    {top:0px;}
+  100%  {top:-40px; transform:rotate(-45deg);}
+}
+
+@keyframes middlebarout {
+  0%    {opacity:1;}
+  100%  {opacity:0;}
+}
+

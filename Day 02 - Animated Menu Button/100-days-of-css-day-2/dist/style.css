@@ -1,0 +1,132 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background: orange;
+  color: #333;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#topbar {
+  color: brown;
+  background: brown;
+  border: 1px solid brown;
+  height: 5vh;
+  width: 10vw;
+  margin: 15px;
+  position: relative;
+  -webkit-animation-name: topbardown;
+          animation-name: topbardown;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-animation-delay: 10s;
+          animation-delay: 10s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+#midbar {
+  color: brown;
+  background: brown;
+  border: 1px solid brown;
+  height: 5vh;
+  width: 10vw;
+  margin: 15px;
+  -webkit-animation-name: middlebarout;
+          animation-name: middlebarout;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-delay: 10s;
+          animation-delay: 10s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+#lowbar {
+  color: brown;
+  background: brown;
+  border: 1px solid brown;
+  height: 5vh;
+  width: 10vw;
+  margin: 15px;
+  position: relative;
+  -webkit-animation-name: bottombarup;
+          animation-name: bottombarup;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-animation-delay: 10s;
+          animation-delay: 10s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes topbardown {
+  0% {
+    top: 0px;
+  }
+  100% {
+    top: 40px;
+    transform: rotate(45deg);
+  }
+}
+
+@keyframes topbardown {
+  0% {
+    top: 0px;
+  }
+  100% {
+    top: 40px;
+    transform: rotate(45deg);
+  }
+}
+@-webkit-keyframes bottombarup {
+  0% {
+    top: 0px;
+  }
+  100% {
+    top: -40px;
+    transform: rotate(-45deg);
+  }
+}
+@keyframes bottombarup {
+  0% {
+    top: 0px;
+  }
+  100% {
+    top: -40px;
+    transform: rotate(-45deg);
+  }
+}
+@-webkit-keyframes middlebarout {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes middlebarout {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
